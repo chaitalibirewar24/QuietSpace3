@@ -6,17 +6,17 @@
   text-align: center;
 }
 
-:root {
-  --main-bg: rgb(234, 187, 151);
-}
+
 
 html, body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
-  background: var(--main-bg);
-  color: black;
+  background: #FCDCE1;
+  /*color: rgb(73, 13, 1);*/
+  color: rgb(105, 11, 31);
+
 }
 
 /* Video Background */
@@ -63,7 +63,18 @@ html, body {
 /* Features Section */
 .features {
   background-color: var(--main-bg);
-  padding: 50px 10%;
+  padding: 50px 16%;
+}
+.features h1{
+    font-family:"Dancing Script", cursive;
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.features p{
+    font-family: "Roboto";
+    font-size: 20px;
 }
 
 /* Row layout */
@@ -83,7 +94,7 @@ html, body {
 .text-col {
   flex:50%;
   margin-bottom: 20px;
-  padding: 0 20px;
+  padding: 50px 20px;
 }
 
 /* Image Container (full-width image) */
