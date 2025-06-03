@@ -4,15 +4,19 @@
   padding: 0;
   box-sizing: border-box;
   text-align: center;
-  background-color: rgb(234, 222, 180);
+}
 
+:root {
+  --main-bg: rgb(234, 187, 151);
 }
 
 html, body {
   width: 100%;
   height: 100%;
-  overflow-x: hidden; /* Allow scrolling down, prevent horizontal scroll */
+  overflow-x: hidden;
   font-family: "Roboto", sans-serif;
+  background: var(--main-bg);
+  color: black;
 }
 
 /* Video Background */
@@ -22,11 +26,13 @@ html, body {
   object-fit: cover;
   display: block;
 }
+
 .video-section {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  background-color: var(--main-bg);
 }
 
 /* Overlay Heading */
@@ -42,13 +48,11 @@ html, body {
   z-index: 2;
 }
 
-/* Site Name */
 #website-name {
   font-family: "Dancing Script", cursive;
   font-weight: 700;
 }
 
-/* Slogan */
 #slogan {
   font-family: "Roboto Mono", monospace;
   font-weight: 300;
@@ -58,46 +62,56 @@ html, body {
 
 /* Features Section */
 .features {
-  background-color: #f4f4f4;
-  padding: 50px 20px;
+  background-color: var(--main-bg);
+  padding: 50px 10%;
 }
 
-/* Rows for alternating content */
+/* Row layout */
 .row {
-  margin:0;
-  padding: 0;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin: 40px 0;
+  flex-wrap: wrap;
+  
+}
+.row:nth-child(2) {
+  flex-direction: row-reverse;
 }
 
-/* Text and Image Columns */
-.text-col, .img-col {
-  flex: 1 1 400px;
-  display: inline-block;
-  max-width: 600px;
-  padding: 20px;
+/* Text Column */
+.text-col {
+  flex:50%;
+  margin-bottom: 20px;
+  padding: 0 20px;
+}
+
+/* Image Container (full-width image) */
+.img-col {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex:50%;
+}
+
+.img-col.right {
+  justify-content: flex-end;
+}
+
+.img-col.left {
+  justify-content: flex-start;
 }
 
 .img-col img {
-  padding-left: 0;
-  justify-items: end;
-  align 
-  width: 400px;
-  height: 500px;
-  margin-right: 100px;
+  display: block;
+  width: 300px;
+  height: 400px;
   border-radius: 10px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 
 /* Responsive tweaks */
 @media screen and (max-width: 768px) {
-  .row {
-    flex-direction: column;
-  }
-
   .overlay-text {
     font-size: 32px;
   }
@@ -105,4 +119,11 @@ html, body {
   #slogan {
     font-size: 14px;
   }
+
+  .img-col img {
+    max-width: 90%;
+  }
 }
+
+
+
