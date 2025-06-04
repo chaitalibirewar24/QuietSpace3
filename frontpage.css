@@ -13,9 +13,10 @@ html, body {
   height: 100%;
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
-  background: #FCDCE1;
-  /*color: rgb(73, 13, 1);*/
-  color: rgb(105, 11, 31);
+  background: #FFEADD;
+  color: rgb(73, 13, 1);
+  /*color: rgb(105, 11, 31);*/
+  
 
 }
 
@@ -68,14 +69,55 @@ html, body {
 .features h1{
     font-family:"Dancing Script", cursive;
     margin-bottom: 40px;
-    font-weight: 600;
-    font-size: 50px;
+    font-weight: bold;
+    font-size: 68px;
 }
 
 .features p{
-    font-family: "Roboto";
+    font-family: "Lexend Deca",sans-serif;
     font-size: 20px;
+    font-weight:100px;
+    opacity: 0.6;
 }
+
+
+.lexend-deca{
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: lighter;
+  font-style: normal;
+}
+.arvo-regular {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.arvo-bold {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.arvo-regular-italic {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.arvo-bold-italic {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 
 /* Row layout */
 .row {
@@ -115,11 +157,12 @@ html, body {
 
 .img-col img {
   display: block;
-  width: 300px;
-  height: 400px;
+  width: 450px;
+  height: 550px;
   border-radius: 10px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
+
 
 /* Responsive tweaks */
 @media screen and (max-width: 768px) {
@@ -135,6 +178,8 @@ html, body {
     max-width: 90%;
   }
 }
+
+
 
 
 
