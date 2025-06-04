@@ -11,16 +11,12 @@ html, body {
   height: 100%;
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
-<<<<<<< HEAD
   background: #FCDCE1;
   color: rgb(105, 11, 31);
-=======
   background: #FFEADD;
   color: rgb(73, 13, 1);
   /*color: rgb(105, 11, 31);*/
   
-
->>>>>>> 5146232173c69b2b87e2840320cb82a38d92d517
 }
 
 /* Video Background */
@@ -68,7 +64,6 @@ html, body {
   background-color: #FCDCE1;
   padding: 50px 16%;
 }
-<<<<<<< HEAD
 
 .features h1 {
   font-family: "Dancing Script", cursive;
@@ -80,7 +75,7 @@ html, body {
 .features p {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
-=======
+}
 .features h1{
     font-family:"Dancing Script", cursive;
     margin-bottom: 40px;
@@ -93,7 +88,6 @@ html, body {
     font-size: 20px;
     font-weight:100px;
     opacity: 0.6;
->>>>>>> 5146232173c69b2b87e2840320cb82a38d92d517
 }
 
 
