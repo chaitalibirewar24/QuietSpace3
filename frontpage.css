@@ -11,8 +11,16 @@ html, body {
   height: 100%;
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
+<<<<<<< HEAD
   background: #FCDCE1;
   color: rgb(105, 11, 31);
+=======
+  background: #FFEADD;
+  color: rgb(73, 13, 1);
+  /*color: rgb(105, 11, 31);*/
+  
+
+>>>>>>> 5146232173c69b2b87e2840320cb82a38d92d517
 }
 
 /* Video Background */
@@ -60,6 +68,7 @@ html, body {
   background-color: #FCDCE1;
   padding: 50px 16%;
 }
+<<<<<<< HEAD
 
 .features h1 {
   font-family: "Dancing Script", cursive;
@@ -71,7 +80,60 @@ html, body {
 .features p {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
+=======
+.features h1{
+    font-family:"Dancing Script", cursive;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 68px;
 }
+
+.features p{
+    font-family: "Lexend Deca",sans-serif;
+    font-size: 20px;
+    font-weight:100px;
+    opacity: 0.6;
+>>>>>>> 5146232173c69b2b87e2840320cb82a38d92d517
+}
+
+
+.lexend-deca{
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: lighter;
+  font-style: normal;
+}
+.arvo-regular {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.arvo-bold {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.arvo-regular-italic {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.arvo-bold-italic {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 
 /* Row layout */
 .row {
@@ -111,8 +173,8 @@ html, body {
 
 .img-col img {
   display: block;
-  width: 300px;
-  height: 400px;
+  width: 450px;
+  height: 550px;
   border-radius: 10px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -125,11 +187,13 @@ html, body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
+
 /* Responsive tweaks */
 @media screen and (max-width: 768px) {
   .overlay-text {
     font-size: 32px;
   }
+}
 
   #slogan {
     font-size: 14px;
@@ -139,4 +203,3 @@ html, body {
     max-width: 90%;
     height: auto;
   }
-}
