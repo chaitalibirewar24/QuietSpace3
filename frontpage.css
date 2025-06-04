@@ -11,9 +11,7 @@ html, body {
   height: 100%;
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
-  background: #FCDCE1;
-  color: rgb(105, 11, 31);
-  background: #FFEADD;
+  background: #fcdce1;
   color: rgb(73, 13, 1);
   /*color: rgb(105, 11, 31);*/
   
@@ -164,6 +162,11 @@ html, body {
 .img-col.left {
   justify-content: flex-start;
 }
+/* Hover effect */
+.img-col img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
 
 .img-col img {
   display: block;
@@ -175,11 +178,7 @@ html, body {
   cursor: pointer;
 }
 
-/* Hover effect */
-.img-col img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
+
 
 
 /* Responsive tweaks */
