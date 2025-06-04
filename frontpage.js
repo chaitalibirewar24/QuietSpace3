@@ -19,6 +19,17 @@ function playVideo(index) {
     playVideo(current);
   }, 5000);
 }
+// Load a background video dynamically if needed
+const videoPlayer = document.getElementById("videoPlayer");
+
+// Optional: Replace with your own video file path
+videoPlayer.src = "background-video.mp4";
+
+// Optional: Add an event listener
+videoPlayer.addEventListener("loadeddata", () => {
+    console.log("Video loaded successfully");
+});
+
 
 // Start the playlist
 document.addEventListener("DOMContentLoaded", () => {
