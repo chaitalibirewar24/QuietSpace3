@@ -1,3 +1,4 @@
+// Video Playlist Logic
 const videoList = ["Cafevideo.mp4", "libraryvideo.mp4", "Parkvideo.mp4"];
 let current = 0;
 
@@ -19,19 +20,34 @@ function playVideo(index) {
     playVideo(current);
   }, 5000);
 }
+
 // Load a background video dynamically if needed
 const videoPlayer = document.getElementById("videoPlayer");
-
-// Optional: Replace with your own video file path
 videoPlayer.src = "background-video.mp4";
 
-// Optional: Add an event listener
 videoPlayer.addEventListener("loadeddata", () => {
-    console.log("Video loaded successfully");
+  console.log("Video loaded successfully");
 });
 
-
-// Start the playlist
+// Start the playlist when DOM is ready
 document.addEventListener("DOMContentLoaded", () => {
   playVideo(current);
 });
+
+// Footer Functions
+
+// Open a new page in a new tab/window
+function openPage(pageName) {
+  window.open(pageName, '_blank');
+}
+
+// Scroll smoothly to the top of the page or scrollable container
+function scrollToTop() {
+  // Try to detect if a scrollable container exists with id "mainContainer"
+  const container = document.getElementById('mainContainer');
+  if (container) {
+    container.scrollTo({ top: 0, behavior: 'smooth' });
+  } else {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+}
