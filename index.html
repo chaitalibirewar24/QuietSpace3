@@ -1,71 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <title>QuietSpace</title>
-    <link rel="stylesheet" href="frontpage.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Edu+SA+Hand:wght@400..700&family=Pacifico&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>QuietSpace</title>
+  <link rel="stylesheet" href="frontpage.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Edu+SA+Hand:wght@400..700&family=Pacifico&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <div class="header">
-        <!-- Video Background -->
-        <section class="video-section">
-            <video id="videoPlayer" autoplay muted playsinline></video>
 
-            <!-- Overlay Title inside video section -->
-            <div class="overlay-text">
-                <h1 id="website-name">QuietSpace</h1>
-                <h6 id="slogan">For your Quiet days</h6>
-            </div>
-        </section>
+  <div class="header">
+    <section class="video-section">
+      <video id="videoPlayer" autoplay muted playsinline></video>
+      <div class="overlay-text">
+        <h1 id="website-name">QuietSpace</h1>
+        <h6 id="slogan">For your Quiet days</h6>
+      </div>
+    </section>
+  </div>
+
+  <!-- Features Section -->
+  <div class="features">
+    <div class="row">
+      <div class="text-col">
+        <h1>Classy Cafés</h1>
+        <p>Enjoy the classy aroma of coffee while cozyness envelopes you</p>
+      </div>
+      <div class="img-col right">
+        <a href="cafe.html"><img src="Cafephoto.jpg" alt="Cafe"></a>
+      </div>
     </div>
 
-    <!-- Features Section -->
-    <div class="features">
-        <div class="row">
-            <div class="text-col">
-                <h1>Classy Cafés</h1>
-                   <p>Enjoy the classy aroma of coffee while cozyness envelopes you </p>
-            </div>
-            <div class="img-col right">
-                <a href="cafe.html">
-                    <img src="Cafephoto.jpg" alt="Cafe">
-                </a>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="text-col">
-                <h1>Limitless Libraries</h1>
-                <p>Escape into silence and let your creative thoughts flow.</p>
-            </div>
-            <div class="img-col left">
-                <a href="library.html">
-                    <img src="libraryphoto.jpg" alt="Library">
-                </a>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="text-col">
-                <h1>Pleasant Parks</h1>
-                <p>This park offers a perfect blend of nature and calm. Relax, play, and breathe freely.</p>
-            </div>
-            <div class="img-col right">
-                <a href="park.html">
-                    <img src="parkphoto.jpg" alt="Park">
-                </a>
-            </div>
-        </div>
+    <div class="row">
+      <div class="text-col">
+        <h1>Limitless Libraries</h1>
+        <p>Escape into silence and let your creative thoughts flow.</p>
+      </div>
+      <div class="img-col left">
+        <a href="library.html"><img src="libraryphoto.jpg" alt="Library"></a>
+      </div>
     </div>
 
-    <script src="frontpage.js"></script>
+    <div class="row">
+      <div class="text-col">
+        <h1>Pleasant Parks</h1>
+        <p>This park offers a perfect blend of nature and calm. Relax, play, and breathe freely.</p>
+      </div>
+      <div class="img-col right">
+        <a href="park.html"><img src="parkphoto.jpg" alt="Park"></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- App Coming Soon Section -->
+  <section class="app-coming">
+    <h2>What’s brewing on our app?</h2>
+    <p>Stay tuned – your peaceful escapes are going mobile!</p>
+
+    <div class="app-container">
+      <div class="feature-icons">
+        <div class="icon-card">
+          <img src="icons/cafe.png" alt="Cafe">
+          <span>Café Corners</span>
+        </div>
+        <div class="icon-card">
+          <img src="icons/library.png" alt="Library">
+          <span>Silent Study</span>
+        </div>
+        <div class="icon-card">
+          <img src="icons/nature.png" alt="Nature">
+          <span>Nature Nests</span>
+        </div>
+        <div class="icon-card">
+          <img src="icons/music.png" alt="Music">
+          <span>Lo-fi Spots</span>
+        </div>
+      </div>
+
+      <div class="phone-mockup">
+        <img src="icons/phone-mockup.png" alt="Phone">
+        <div class="phone-text">App is Coming Soon!!</div>
+      </div>
+
+      <div class="feature-icons bottom-row">
+        <div class="icon-card">
+          <img src="icons/book.png" alt="Books">
+          <span>Reading Rooms</span>
+        </div>
+        <div class="icon-card">
+          <img src="icons/plant.png" alt="Plant">
+          <span>Zen Gardens</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="frontpage.js"></script>
 </body>
-
 </html>
 
