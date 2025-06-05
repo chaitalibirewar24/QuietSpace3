@@ -326,7 +326,7 @@ html, body {
 }
 
 .feature-card {
-  background-color: #FCDCE1; /* match background for transparent icons */
+  background-color: #ffffff; /* match background for transparent icons */
   padding: 20px;
   border-radius: 20px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -377,7 +377,9 @@ html, body {
   font-family: 'Arvo', serif;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
 }
-
+.phone-text pre {
+  font-size:1.8em;
+}
 .pannel {
     height: 40px;
     background-color: #222f3d;
